@@ -43,7 +43,7 @@ bool HelloWorld::init()
     auto dispather=Director::getInstance()->getEventDispatcher();
     dispather->addEventListenerWithSceneGraphPriority(one, this);
     
-    
+    //小恒在成此修改了下
     auto contactListener=EventListenerPhysicsContact::create();
     contactListener->onContactBegin=[this](const PhysicsContact &contact){
         log("contact");
